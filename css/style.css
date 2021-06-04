@@ -1,0 +1,26 @@
+/* ----------------------- Main Styles -----------------------*/
+
+* {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+}
+
+footer {
+  color: #70757a;
+}
+
+/* ----------------------- Grid Styles -----------------------*/
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "nav"
+    "footer";
+}
+
+.nav {
+  display: flexbox;
+}
