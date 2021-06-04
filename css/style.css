@@ -1,4 +1,11 @@
 /* ----------------------- Main Styles -----------------------*/
+header .left-nav {
+  color: #222;
+}
+
+header .right-nav {
+  color: #000000DE;
+}
 
 * {
   font-family: 'Roboto', arial, sans-serif;
@@ -9,12 +16,15 @@ footer {
   color: #70757a;
 }
 
+
 /* ----------------------- Grid Styles -----------------------*/
 
 .container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
+  /* grid-auto-rows: mimax(150px, auto);
+  grid-gap: 10px; */
   grid-template-areas:
     "nav"
     "nav"
