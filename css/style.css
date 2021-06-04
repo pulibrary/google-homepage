@@ -14,14 +14,17 @@ header .right-nav {
 }
 
 nav,
-footer {
+footer,
+main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px;
 }
 
 main {
   margin: 0 auto;
+  flex-direction: column;
 }
 
 footer {
@@ -31,16 +34,49 @@ footer {
   justify-content: space-between;
 }
 
+.nav-item: {
+  margin: 5px;
+}
+
+.nav-item-2 {
+  margin-right: auto;
+}
+
+.nav-item-1,
+.nav-item-2 {
+  color: #22222;
+}
+
+.nav-item-3,
+.nav-item-4 {
+  color: #rgba(0, 0, 0, .87);
+  font-size: 13px;
+  font-family: arial, sans-serif;
+}
+
+button {
+  margin: 11px 4px;
+  padding: 0 16px;
+  background-color: #f8f9fa;
+  border: none;
+  color: #3c4043;
+}
+
+#leaf {
+  margin: 0 6px 0 0;
+  height: 0.8em;
+}
+
 /* ----------------------- Grid Styles -----------------------*/
 
-/* .container {
+.container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: mimax(150px, auto);
-  grid-gap: 10px;
+  /* grid-template-columns: 1fr; */
+  grid-auto-rows: mimax(auto, auto);
+  /* grid-gap: 10px; */
   grid-template-areas:
     "nav"
-    "nav"
+    "main"
     "footer";
-} */
+}
