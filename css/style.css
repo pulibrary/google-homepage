@@ -13,6 +13,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   padding: 20px;
 }
@@ -36,10 +37,6 @@ button {
 }
 
 /* ----------------------- Nav Styles -----------------------*/
-
-nav {
-  flex-direction: row;
-}
 
 .nav-item {
   display: flex;
@@ -115,7 +112,6 @@ input {
 footer {
   color: #70757a;
   background-color: #f2f2f2;
-  flex-direction: row;
   align-content: center;
 }
 
