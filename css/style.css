@@ -75,9 +75,10 @@ nav {
 
 #profile-image {
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 32px;
   margin-top: -4px;
+  padding: 4px;
 }
 
 /* ----------------------- Main Styles -----------------------*/
