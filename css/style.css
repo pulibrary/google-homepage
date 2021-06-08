@@ -1,9 +1,9 @@
-/* ----------------------- Main Styles -----------------------*/
+/* ----------------------- Styles -----------------------*/
 
 * {
   font-family: 'Roboto', arial, sans-serif;
   font-size: 14px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 header .left-nav {
@@ -21,35 +21,10 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
+  align-items: center;
 }
 
-main {
-  margin: 0 auto;
-  flex-direction: column;
-}
-
-footer {
-  color: #70757a;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: #f2f2f2;
-  flex-direction: row;
-}
-
-.footer-item {
-  display: flex;
-  flex-direction: row;
-}
-
-.footer-subitem {
-  padding: 15px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row;
-}
+/* ----------------------- Nav Styles -----------------------*/
 
 .nav-item: {
   margin: 5px;
@@ -84,16 +59,70 @@ button {
   height: 0.8em;
 }
 
+/* ----------------------- Main Styles -----------------------*/
+
+main {
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* ----------------------- Footer Styles -----------------------*/
+
+footer {
+  color: #70757a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  flex-direction: row;
+  align-content: center;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-item:nth-child(1) {
+  flex-basis: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.footer-subitem {
+  padding: 15px;
+  align-self: center;
+}
+
 /* ----------------------- Grid Styles -----------------------*/
 
 .container {
-  height: 100vh;
   display: grid;
+  height: 100vh;
   /* grid-template-columns: 1fr; */
-  grid-auto-rows: mimax(auto, auto);
+  /* grid-auto-rows: mimax(auto, auto); */
   /* grid-gap: 10px; */
   grid-template-areas:
     "nav"
     "main"
     "footer";
+}
+
+/* ----------------------- Media Queries -----------------------*/
+
+@media screen and (min-width: 1200px) {
+
+  .footer-item:nth-child(1) {
+    flex-basis: auto;
+    order: 2;
+  }
+
+  .footer-item:nth-child(2) {
+    order: 1;
+  }
+
+  .footer-item:nth-child(3) {
+    order: 3;
+  }
+
 }
