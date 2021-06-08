@@ -3,6 +3,7 @@
 * {
   font-family: 'Roboto', arial, sans-serif;
   font-size: 14px;
+  box-sizing: content-box;
 }
 
 header .left-nav {
@@ -31,8 +32,23 @@ footer {
   color: #70757a;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #f2f2f2;
+  flex-direction: row;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-subitem {
+  padding: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-item: {
