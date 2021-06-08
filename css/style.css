@@ -72,7 +72,6 @@ footer {
 
 .footer-item {
   display: flex;
-  flex-direction: row;
 }
 
 .footer-item:nth-child(1) {
