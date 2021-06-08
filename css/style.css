@@ -74,6 +74,7 @@ footer {
 .footer-item {
   display: flex;
   margin: auto;
+  justify-content: space-evenly;
 }
 
 .footer-item:nth-child(1) {
