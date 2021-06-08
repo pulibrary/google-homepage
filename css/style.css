@@ -26,21 +26,22 @@ main {
 
 /* ----------------------- Nav Styles -----------------------*/
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+}
+
 .nav-item: {
   margin: 5px;
+  display: flex;
+  flex-direction: row;
+  color: #222;
 }
 
-.nav-item-2 {
-  margin-right: auto;
-}
-
-.nav-item-1,
-.nav-item-2 {
-  color: #22222;
-}
-
-.nav-item-3,
-.nav-item-4 {
+.nav-item:nth-child(2) {
   color: #rgba(0, 0, 0, .87);
   font-size: 13px;
   font-family: arial, sans-serif;
@@ -62,7 +63,6 @@ button {
 /* ----------------------- Main Styles -----------------------*/
 
 main {
-  margin: 0 auto;
   flex-direction: column;
 }
 
@@ -85,8 +85,6 @@ footer {
 
 .footer-item:nth-child(1) {
   flex-basis: 100%;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .footer-subitem {
