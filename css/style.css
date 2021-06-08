@@ -21,17 +21,13 @@ button {
   margin: 11px 4px;
   padding: 0 16px;
   background-color: #f8f9fa;
-  border: none;
+  border-radius: 4px;
   color: #3c4043;
 }
 
 #leaf {
   margin: 0 6px 0 0;
   height: 0.8em;
-}
-
-img {
-  background-color: white;
 }
 
 /* ----------------------- Nav Styles -----------------------*/
