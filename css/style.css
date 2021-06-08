@@ -12,8 +12,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
   align-items: center;
+  padding: 20px;
 }
 
 button {
@@ -29,18 +29,24 @@ button {
   height: 0.8em;
 }
 
+img {
+  background-color: white;
+}
+
 /* ----------------------- Nav Styles -----------------------*/
 
 nav {
   flex-direction: row;
-  align-content: center;
 }
 
-.nav-item: {
-  margin: 5px;
+.nav-item {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   color: #222;
+}
+
+.nav-submitem {
+  padding: 5px;
 }
 
 .nav-item:nth-child(2) {
