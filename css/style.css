@@ -73,6 +73,7 @@ footer {
 
 .footer-item {
   display: flex;
+  margin: auto;
 }
 
 .footer-item:nth-child(1) {
