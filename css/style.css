@@ -19,15 +19,19 @@ main {
 
 button {
   margin: 11px 4px;
-  padding: 0 16px;
+  padding: 10px 16px;
   background-color: #f8f9fa;
   border-radius: 4px;
   color: #3c4043;
 }
 
-#leaf {
-  margin: 0 6px 0 0;
-  height: 0.8em;
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
 }
 
 /* ----------------------- Nav Styles -----------------------*/
@@ -52,10 +56,41 @@ nav {
   font-family: arial, sans-serif;
 }
 
+.small-grid {
+  padding: 5px;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+  margin-top: -4px;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 /* ----------------------- Main Styles -----------------------*/
 
 main {
   flex-direction: column;
+}
+
+input {
+  border: none;
+}
+
+.search-bar {
+  padding: 5px 8px 0 16px;
+  border: 1px;
+}
+
+#search-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ----------------------- Footer Styles -----------------------*/
@@ -81,15 +116,9 @@ footer {
   padding: 15px;
 }
 
-/* ----------------------- Grid Styles -----------------------*/
-
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-areas:
-    "nav"
-    "main"
-    "footer";
+#leaf {
+  margin: 0 6px 0 0;
+  height: 0.8em;
 }
 
 /* ----------------------- Media Queries -----------------------*/
