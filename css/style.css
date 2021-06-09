@@ -13,9 +13,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
-  padding: 20px;
   text-align: center;
 }
 
@@ -92,6 +90,7 @@ nav {
 
 main {
   flex-direction: column;
+  padding: 20px;
 }
 
 input {
@@ -109,7 +108,6 @@ main > * {
 
 .search-bar {
   display: flex;
-  flex-direction: row;
   padding: 14px 8px 0px 16px;
   border-style: solid;
   border-width: 1px;
@@ -135,7 +133,7 @@ main > * {
 /* ----------------------- Footer Styles -----------------------*/
 
 footer {
-  color: #70757a;
+
   background-color: #f2f2f2;
   align-content: center;
   flex-direction: column;
@@ -152,6 +150,7 @@ footer {
 }
 
 .footer-item > * {
+  color: #70757a;
   padding: 15px;
 }
 
