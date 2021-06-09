@@ -8,8 +8,8 @@
 }
 
 nav,
-footer,
-main {
+main,
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -26,15 +26,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-areas:
-    "nav"
-    "main"
-    "footer";
 }
 
 /* ----------------------- Nav Styles -----------------------*/
@@ -67,6 +58,14 @@ nav {
   margin: auto;
 }
 
+.right-subitem:first-child {
+  padding-right: 0;
+}
+
+.right-subitem:last-child {
+  padding: 0px 8px;
+}
+
 .small-grid {
   display: grid;
   grid-gap: 2px;
@@ -74,8 +73,8 @@ nav {
 }
 
 .dot {
-  height: 3px;
-  width: 3px;
+  height: 4px;
+  width: 4px;
   background-color: #5f6368;;
   border-radius: 50%;
   display: inline-block;
@@ -102,10 +101,14 @@ input {
   margin-top: -10px;
 }
 
+main > * {
+  padding: 20px 0;
+}
+
 .search-bar {
   display: flex;
   flex-direction: row;
-  padding: 14px 8px 5px 16px;
+  padding: 14px 8px 0px 16px;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(224, 224, 224);
@@ -135,6 +138,10 @@ footer {
   align-content: center;
   flex-direction: column;
   padding: 0 20px;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-item {
