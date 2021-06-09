@@ -15,6 +15,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  align-content: center;
 }
 
 a {
@@ -35,7 +36,6 @@ nav {
 
 .nav-item {
   display: flex;
-  flex-wrap: wrap;
   color: #222;
 }
 
@@ -133,9 +133,7 @@ main > * {
 /* ----------------------- Footer Styles -----------------------*/
 
 footer {
-
   background-color: #f2f2f2;
-  align-content: center;
   flex-direction: column;
   padding: 0 20px;
   flex-shrink: 0;
