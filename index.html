@@ -10,7 +10,9 @@
   <meta name="author" content="Zaynab Masood">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -26,13 +28,13 @@
   <div class="container">
     <nav>
       <div class="nav-item">
-        <a id="about" href="https://about.google">About</a>
-        <a id="store" href="https://store.google.com">Store</a>
+        <a class="left-subitem" id="about" href="https://about.google">About</a>
+        <a class="left-subitem" id="store" href="https://store.google.com">Store</a>
       </div>
       <div class="nav-item">
-        <a id="gmail" href="https://mail.google.com">Gmail</a>
-        <a id="images" href="https://www.google.com/imghp">Images</a>
-        <div class="small-grid">
+        <a class="right-subitem" id="gmail" href="https://mail.google.com">Gmail</a>
+        <a class="right-subitem" id="images" href="https://www.google.com/imghp">Images</a>
+        <div class="small-grid right-subitem">
           <div class="dot"></div>
           <div class="dot"></div>
           <div class="dot"></div>
@@ -43,16 +45,20 @@
           <div class="dot"></div>
           <div class="dot"></div>
         </div>
-        <div id="profile-icon"><img src="img/profile-cat.jpg" alt="Profile Image" id="profile-image"></div>
+        <div class="right-subitem" id="profile-icon"><img src="img/profile-cat.jpg" alt="Profile Image" id="profile-image"></div>
       </div>
     </nav>
     <main>
-      <img src="img/google-logo.svg" alt="Google logo">
-      <div class="search-bar">
-        <img src="img/magnifying-glass.png" alt="Search icon" id="search-icon">
-        <input type="text">
+      <div class="logo">
+        <img src="img/google-logo.svg" alt="Google logo">
       </div>
-      <div>
+      <div class="search">
+        <div class="search-bar">
+          <img src="img/magnifying-glass.png" alt="Search icon" id="search-icon">
+          <input type="text">
+        </div>
+      </div>
+      <div class="buttons">
         <button class="main-button">Google Search</button>
         <button class="main-button">I'm Feeling Lucky</button>
       </div>
