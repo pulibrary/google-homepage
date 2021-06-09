@@ -116,7 +116,7 @@ main > * {
 }
 
 #search-icon {
-  margin-top: 0px;
+  margin-top: -2px;
   width: 14px;
   height: 14px;
 }
