@@ -95,7 +95,8 @@ main {
 }
 
 input {
-  width: 527px;
+  max-width: 527px;
+  width: 50vw;
   height: 34px;
   margin-bottom: 2px;
   border: none;
