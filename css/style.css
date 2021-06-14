@@ -73,7 +73,7 @@ nav {
 .dot {
   height: 4px;
   width: 4px;
-  background-color: #5f6368;;
+  background-color: #5f6368;
   border-radius: 50%;
   display: inline-block;
 }
@@ -140,11 +140,19 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  justify-content: space-evenly;
 }
 
 .footer-item {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.footer-item-1 {
+  flex-basis: 100%;
+}
+
+.footer-item-1 > * {
+  margin: 0 auto;
 }
 
 .footer-item > * {
@@ -165,25 +173,25 @@ footer {
     flex-direction: row;
   }
 
-  .footer-item:nth-child(1) {
-    flex-basis: 100%;
-  }
-
 }
 
 @media screen and (min-width: 1200px) {
 
-  .footer-item:nth-child(1) {
+  footer {
+    justify-content: space-between;
+
+  }
+
+  .footer-item-1 {
     flex-basis: auto;
-    width: auto;
     order: 2;
   }
 
-  .footer-item:nth-child(2) {
+  .footer-item-2 {
     order: 1;
   }
 
-  .footer-item:nth-child(3) {
+  .footer-item-3 {
     order: 3;
   }
 
