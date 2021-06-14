@@ -91,6 +91,7 @@ nav {
 main {
   flex-direction: column;
   padding: 20px;
+  margin-top: 4vh;
 }
 
 input {
